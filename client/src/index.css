@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  color: #1a3740;
+  background-image: radial-gradient(ellipse at 20% 0%, rgba(61, 143, 158, 0.25), transparent 50%),
+    radial-gradient(ellipse at 90% 20%, rgba(234, 88, 12, 0.12), transparent 40%),
+    linear-gradient(165deg, #f4f8f9 0%, #e8f1f3 45%, #dfe9ec 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .panel {
+    @apply border border-harbor-900/10 bg-white/70 backdrop-blur-sm;
+  }
+}
